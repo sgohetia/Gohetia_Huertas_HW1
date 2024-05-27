@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Freeman", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 5px;
+  background: rgb(111, 11, 194);
+}
+.social-i {
+  font-size: 3em;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin: 0px 5px;
+}
+
+.footer-nav a {
+  color: #fff;
+}
+
+.footer-nav a:hover {
+  color: red;
+}
+nav {
+  background: rgb(111, 11, 194);
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: red;
+}
+.hidden {
+  display: none;
+}
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-menu li {
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .nav-menu {
+    margin-top: 15px;
+    display: none;
+  }
+
+  .nav-menu.active,
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.description p {
+  padding: 10px;
+}
+.title {
+  font-size: 35px;
+}
+.footer-des {
+  margin-bottom: 50px;
+}
+.fruits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.cherry,
+.grapes,
+.peach,
+.orange,
+.strawberry {
+  width: calc(30.33% - 10px);
+  margin-bottom: 20px;
+}
+.orange {
+  margin-left: 90px;
+}
+.strawberry {
+  margin-right: 90px;
+}
+@media (max-width: 768px) {
+  .cherry,
+  .grapes,
+  .peach,
+  .orange,
+  .strawberry {
+    width: calc(50% - 10px);
+  }
+  .orange {
+    margin-left: 0;
+  }
+  .strawberry {
+    margin-right: 0;
+  }
+  .description,
+  .footer-des {
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
