@@ -14,6 +14,14 @@ a,
 a:hover {
   text-decoration: none;
 }
+.icon-container {
+  display: flex;
+}
+
+.icon-container div {
+  width: 50%;
+}
+
 .footer-nav {
   display: flex;
   align-items: center;
@@ -127,46 +135,26 @@ nav a:hover {
 .footer-des {
   margin-bottom: 50px;
 }
-.fruits {
+
+.icon-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 80px;
 }
 
-.cherry,
-.grapes,
-.peach,
-.orange,
-.strawberry {
-  width: calc(30.33% - 10px);
-  margin-bottom: 20px;
+.icon-container div {
+  width: 50%;
 }
-.orange {
-  margin-left: 90px;
-}
-.strawberry {
-  margin-right: 90px;
-}
+
 @media (max-width: 768px) {
-  .cherry,
-  .grapes,
-  .peach,
-  .orange,
-  .strawberry {
-    width: calc(50% - 10px);
-  }
-  .orange {
-    margin-left: 0;
-  }
-  .strawberry {
-    margin-right: 0;
-  }
   .description,
   .footer-des {
     margin: 0 auto;
     padding: 10px;
+  }
+  .icon-container {
+    display: flex;
+  }
+
+  .icon-container div {
+    width: 50%;
   }
 }
