@@ -9,17 +9,61 @@
 	.st3{fill:#795548;}
 	.st4{fill:#FFCDD2;}
 
-		#cherry:hover #green {
+	#cherry:hover #green {
   		fill: green;
 	}
+	#cherry:hover #red {
+  		fill: #D50000;
+	}
+ 	#cherry:hover #pink {
+  		fill: white;
+	}
+
 	#green {
   	transform-origin: center;
   	transition: all 0.5s ease-in-out;
 	}
-		#cherry:hover #green {
+	#darkRed {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#red {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#brown {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#pink {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+
+	#cherry:hover #green {
+  	transform: rotate(12deg);
+	}
+	#cherry:hover #darkRed {
+  	transform: rotate(7deg);
+	}
+	#cherry:hover #red {
+  	transform: rotate(7deg);
+	}
+	#cherry:hover #brown {
+  	transform: rotate(7deg);
+	}
+	#cherry:hover #pink {
   	transform: rotate(7deg);
 	}
 </style>
+<script>
+	const theCherry = document.querySelector("#cherry");
+	
+	function logTheId() {
+		console.log(this.id)
+	}
+	theCherry.addEventListener("click", logTheId);
+</script>
 <g id="fruit-leave">
 	<path id="green" class="st0" d="M100,40.8c-5.6-5.9,9.1-40.6-28.1-40.6C50.6,41.4,100,40.8,100,40.8z"/>
 </g>

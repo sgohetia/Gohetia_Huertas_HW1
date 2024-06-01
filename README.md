@@ -2,6 +2,12 @@
 
 This repo is collaboration work for HW #1 - INTERACTIVE SVG ICONS
 
+## Page Specification
+
+1. Interactive SVG
+2. JavaScript interaction with SVG
+3. Mobile Responsive
+
 ## Installation
 
 No installation is required.

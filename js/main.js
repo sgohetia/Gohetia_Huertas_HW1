@@ -24,15 +24,15 @@
 
   //This script here is for the SVG icon interaction when clicked
   //To select all elements in the node list we use querySelectorAll
-  const clickFruits = document.querySelectorAll("#fruits img");
+  const clickFruits = document.querySelectorAll(".icon-container object");
   console.log(clickFruits);
 
   //This is a funtion to execute the event for the forEach method
-  function logId() {
-    console.log(this.id);
-  }
+  // function logId() {
+  //   console.log(this.id);
+  // }
   //This is a loop through the clickFruits nodelist usig forEach method
-  clickFruits.forEach(function (img) {
-    img.addEventListener("click", logId);
-  });
+  // clickFruits.forEach(function (object) {
+  //   object.addEventListener("click", logId);
+  // });
 })();
