@@ -15,11 +15,51 @@ a:hover {
   text-decoration: none;
 }
 .icon-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-items: center;
 }
-
 .icon-container div {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-container object {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+.icon-container object:hover {
+  transform: scale(1.2);
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.profile img:hover {
+  transform: scale(1.1);
+}
+.profile p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 20px;
+}
+.aboutus-des {
+  font-size: 25px;
+  margin-bottom: 40px;
 }
 
 .footer-nav {

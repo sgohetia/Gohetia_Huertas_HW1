@@ -8,7 +8,54 @@
 	.st2{fill:#30C03F;}
 	.st3{fill:#97CF43;}
 	.st4{fill:#5A4530;}
+
+	#orange:hover #orbody {
+  		fill: #FFA05F;
+	}
+	#orbody {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#lv2 {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#lv1 {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#br2 {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#br1 {
+  	transform-origin: center;
+  	transition: all 0.5s ease-in-out;
+	}
+	#orange:hover #orbody {
+  	transform: rotate(50deg);
+	}
+	#orange:hover #lv2 {
+  	transform: rotate(10deg);
+	}
+	#orange:hover #lv1 {
+  	transform: rotate(10deg);
+	}
+	#orange:hover #br1 {
+  	transform: rotate(10deg);
+	}
+	#orange:hover #br2 {
+  	transform: rotate(10deg);
+	}
 </style>
+<script>
+	const theOrange = document.querySelector("#orange");
+	
+	function logTheId() {
+		console.log(this.id)
+	}
+	theOrange.addEventListener("click", logTheId);
+</script>
 <g id="o-body">
 	<path id="orbody" class="st0" d="M0,76.2c0,38.2,31,69.2,69.2,69.2s69.2-31,69.2-69.2S107.4,7,69.2,7S0,38,0,76.2z"/>
 	<path id="or7" class="st1" d="M45.1,29.5c0,1.9,1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5S50.5,26,48.6,26S45.1,27.5,45.1,29.5z"/>
