@@ -8,6 +8,9 @@
       .st2 {fill: #ff8c5f;}
       .st3 {fill: #77b255;}
       
+      #peach:hover #p-body {
+        fill:#77b255;
+      }
 
     </style>
   </defs>
