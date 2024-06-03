@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Peach" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
-  <defs>
+  
     <style>
       .st0 {fill: #5c913b;}
       .st0, .st1, .st2, .st3 {stroke-width: 0px;}
@@ -8,12 +8,39 @@
       .st2 {fill: #ff8c5f;}
       .st3 {fill: #77b255;}
       
-      #peach:hover #p-leaves {
-        fill:#dd2e44;
+      @keyframes float {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-3px);
+        }
+      }
+
+      #Peach {
+        transition: fill 0.3s ease;
+      }
+
+      #Peach:hover {
+        animation: float 2s ease-in-out infinite;
+      }
+
+      #Peach:hover #p-body {
+        fill: #e57373;
       }
 
     </style>
-  </defs>
+    <script>
+
+	  const thePeach = document.querySelector("#Peach");
+	
+	  function logTheId() {
+		console.log(this.id)
+	  }
+	  thePeach.addEventListener("click", logTheId);
+
+    </script>
+
   <path id="p-leaves" class="st0" d="M23.6,113.9S131.9,2.8,245.8,2.8s176.4,109.7,176.4,109.7c0,0,13.9-88.9,111.1-88.9s154.2,69.4,154.2,69.4c0,0-79.2,47.2-102.8,56.9-62.2,25.6-252.8,79.2-341.7,56.9S23.6,113.9,23.6,113.9Z"/>
   <path id="p-body" class="st2" d="M400,133.3s23.2-19.9,133.3-19.9,266.7,106.9,266.7,287.3c0,256.2-332.4,397.4-332.4,397.4,0,0-419.1-24.9-445.4-398.6C9,212.1,204.6,120.6,266.3,120.6c94.5,0,133.7,12.7,133.7,12.7Z"/>
   <path id="p-leaf" class="st3" d="M23.6,115.2S131.9,4.1,245.8,4.1s176.4,109.7,176.4,109.7c0,0-83.9,71.5-178.9,73.4-91.6,1.8-219.7-72-219.7-72h0Z"/>
