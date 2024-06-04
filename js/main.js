@@ -27,6 +27,8 @@
   const clickFruits = document.querySelectorAll(".icon-container object");
   console.log(clickFruits);
 
+  //In this condition or function, we implement it directly to the SVG using the script tag since we are using Object tag.
+
   //This is a funtion to execute the event for the forEach method
   // function logId() {
   //   console.log(this.id);

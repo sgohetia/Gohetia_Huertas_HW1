@@ -11,11 +11,14 @@
     ></script>
   </head>
   <body>
-    <nav>
+    <nav class="sticky-header">
+      <h1 class="hidden">Website Navigation</h1>
       <div class="logo">
-        <a href="#"><img src="image/burple-logo.png" alt="burple-logo" /></a>
+        <h2 class="hidden">Burple Logo</h2>
+        <a href="#"><img src="image/logo.png" alt="burple-logo" /></a>
       </div>
       <div class="menu-icon" id="menu-icon">
+        <h2 class="hidden">Menu</h2>
         <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
       </div>
       <ul class="nav-menu" id="nav-menu">
@@ -24,12 +27,11 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+    <div class="cover-image"></div>
     <main>
       <div class="description icon-container">
-        <p class="title">
-          🌟 Introducing Burple: Bursting with Flavor, Overflowing with
-          Goodness! 🌟
-        </p>
+        <h1 class="hidden">Burple Text Content 1</h1>
+        <p class="title">Bursting with Flavor, Overflowing with Goodness!</p>
         <p>
           Indulge your taste buds in a symphony of fruity delights with Burple -
           the ultimate fusion of grapes, cherry, peach, strawberry, and orange!
@@ -52,44 +54,63 @@
           fruity goodness, Burple is here to brighten your day, one sip at a
           time.
         </p>
+        <p class="title">Hover the Icon to see some animation!</p>
       </div>
     </main>
     <section class="icon-container" id="icon-container">
-      <h2 class="hidden">Burple Content here!</h2>
-      <div>
+      <h1 class="hidden">Burple fruits</h1>
+      <h2 class="hidden">Cherry</h2>
+      <div class="svg-container">
         <object
           data="image/cherry-svgrepo-com-v1.svg"
           type="image/svg+xml"
           id="cherry"
         ></object>
+        <span class="label">Cherry</span>
       </div>
       <div>
-        <object
-          data="image/grapes-svgrepo-com.svg"
-          type="image/svg+xml"
-          id="grapes"
-        ></object>
+        <h2 class="hidden">Grapes</h2>
+        <div class="svg-container">
+          <object
+            data="image/grapes-svgrepo-com.svg"
+            type="image/svg+xml"
+            id="grapes"
+          ></object>
+          <span class="label">Grape</span>
+        </div>
       </div>
       <div>
-        <object
-          data="image/peach-svgrepo-com.svg"
-          type="image/svg+xml"
-          id="peach"
-        ></object>
+        <h2 class="hidden">Peach</h2>
+        <div class="svg-container">
+          <object
+            data="image/peach-svgrepo-com.svg"
+            type="image/svg+xml"
+            id="peach"
+          ></object>
+          <span class="label">Peach</span>
+        </div>
       </div>
       <div>
-        <object
-          data="image/orange-svgrepo-com.svg"
-          type="image/svg+xml"
-          id="orange"
-        ></object>
+        <h2 class="hidden">Orange</h2>
+        <div class="svg-container">
+          <object
+            data="image/orange-svgrepo-com.svg"
+            type="image/svg+xml"
+            id="orange"
+          ></object>
+          <span class="label">Orange</span>
+        </div>
       </div>
       <div>
-        <object
-          data="image/strawberry-svgrepo-com.svg"
-          type="image/svg+xml"
-          id="strawberry"
-        ></object>
+        <h2 class="hidden">Strawberry</h2>
+        <div class="svg-container">
+          <object
+            data="image/strawberry-svgrepo-com.svg"
+            type="image/svg+xml"
+            id="strawberry"
+          ></object>
+          <span class="label">Strawberry</span>
+        </div>
       </div>
     </section>
     <p class="description footer-des">
@@ -101,16 +122,19 @@
       <div class="footer-nav">
         <ul>
           <li>
+            <h2 class="hidden">Facebook</h2>
             <a href="#"
               ><ion-icon name="logo-facebook" class="social-i"></ion-icon
             ></a>
           </li>
           <li>
+            <h2 class="hidden">Twitter</h2>
             <a href="#"
               ><ion-icon name="logo-twitter" class="social-i"></ion-icon
             ></a>
           </li>
           <li>
+            <h2 class="hidden">Instagram</h2>
             <a href="#"
               ><ion-icon name="logo-instagram" class="social-i"></ion-icon
             ></a>
