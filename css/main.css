@@ -86,13 +86,34 @@ nav a:hover {
 /* This is the style for Cover Image */
 
 .cover-image {
-  background-image: url(../image/burp-juice.jpg);
+  /* background-image: url(../image/burp-juice.jpg); */
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 75vh;
+  height: 90vh;
+  transition: background-image 1s ease-in-out;
+  animation: slide 12s infinite;
 }
-
+@keyframes slide {
+  0% {
+    background-image: url("../image/burp-juice.jpg");
+  }
+  20% {
+    background-image: url("../image/grape.jpg");
+  }
+  40% {
+    background-image: url("../image/cherry.jpg");
+  }
+  60% {
+    background-image: url("../image/peach.jpg");
+  }
+  88% {
+    background-image: url("../image/strawberry.jpg");
+  }
+  100% {
+    background-image: url("../image/orange.jpg");
+  }
+}
 /* This is the style for the Title Introduction */
 
 .title {
